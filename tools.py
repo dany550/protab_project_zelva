@@ -297,7 +297,7 @@ class DBase:
 
         #setup
         g_cons = 20 # gyrocorector constant (its not recomended to set below 2 and above 50)
-        corector_cons = 20 * direction
+        corector_cons = 7 * direction
         terminal_speed = clamp(terminal_speed, 1000, 50)
         stop = terminal_speed == 50
         start_angle = self.active_areas[Area_N].angle
@@ -503,11 +503,13 @@ A.instructions = ["down", [0, 20], [10, 20], [10, 0], "up", [15, 10], "down", [5
 B = Area()
 B.instructions = ["down", [0, 20], [10, 15], [5, 10], [10, 5], [5, 0], "up"]
 
+abeceda = {"A": A, "B": B, "C": C, "D": D, "E": E, "F": F, "G": G, "H": H, "I": I, "J": J, "K": K, "L": L, "M": M, "N": N, "O": O, "P": P, "Q": Q, "R": R, "S": S, "T": T, "U": U, "V": V, "W": W, "X": X, "Y": Y, "Z": Z}
+
 #Area nistruction set
 mag = 5
 protab_set = [[[0 * mag, 0 * mag], P, mag], [[20 * mag, 0 * mag], R, mag], [[40 * mag, 0 * mag], O, mag], [[60 * mag, 0 * mag], T, mag], [[80 * mag, 0 * mag], A, mag], [[100 * mag, 0 * mag], B, mag]]
 
-#inicialization
+#inicializationgit 
 hub = EV3Brick()
 gyro1 = GyroSensor(Port.S1)
 gyro2 = GyroSensor(Port.S4)
