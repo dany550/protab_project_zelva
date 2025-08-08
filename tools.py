@@ -399,7 +399,7 @@ class DBase:
         for character in letters:
             if character != " ":
                 templates.append([[ch_N * 20 * mag, 0, 0], abeceda[character], mag])
-                ch_N += 1
+            ch += 1
 
         self.set_driver(templates, speed=500)
 
@@ -504,7 +504,7 @@ drive = DBase(hub, Lw, Rw, Pw)
 drive.add_gyro(gyro1)
 drive.add_gyro(gyro2)
 
-drive.write("PROTAB", 3)
+drive.write("HA LOL", 5)
 #drive.set_driver(protab_set, speed=500)
 #drive.area_driver(letter_B, 5, speed=500)
 
