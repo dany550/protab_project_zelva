@@ -406,9 +406,6 @@ class DBase:
 
 #areas
 #alfabet
-A = Area()
-A.instructions = ["down", [0, 20], [10, 20], [10, 0], [10, 10], [0, 10], "up", [0, 10]]
-
 B = Area()
 B.instructions = ["down", [0, 20], [10, 15], [0, 10], [10, 5], [0, 0], "up", [0, 10]]
 
@@ -448,23 +445,11 @@ M.instructions = ["down", [0, 20], [5, 10], [10, 20], [10, 0], "up", [0, 10]]
 N = Area()
 N.instructions = ["down", [0, 20], [10, 0], [10, 20], "up", [0, 10]]
 
-O = Area()
-O.instructions = ["down", [0, 20], [10, 20], [10, 0], [0, 0], "up", [0, 10]]
-
-P = Area()
-P.instructions = ["down", [0, 20], [10, 15], [0, 10], "up", [0, 10]]
-
 Q = Area()
 Q.instructions = ["down", [0, 20], [10, 20], [10, 0], [0, 0], [5, 0], [10, -5], "up", [0, 10]]
 
-R = Area()
-R.instructions = ["down", [0, 20], [10, 15], [0, 10], [10, 0], "up", [0, 10]]
-
 S = Area()
 S.instructions = ["down", [10, 0], [10, 10], [0, 10], [0, 20], [10, 20], "up", [0, 10]]
-
-T = Area()
-T.instructions = [[0, 20], "down", [10, 20], [5, 20], [5, 0], "up", [0, 10]]
 
 U = Area()
 U.instructions = [[0, 20], "down", [0, 0], [10, 0], [10, 20], "up", [0, 10]]
@@ -483,6 +468,24 @@ Y.instructions = [[0, 20], "down", [5, 10], [5, 0], [5, 10], [10, 20], "up", [0,
 
 Z = Area()
 Z.instructions = [[0, 20], "down", [10, 20], [0, 0], [10, 0], "up", [0, 10]]
+
+P = Area()
+P.instructions = ["down", [0, 30], [10, 25], [5, 20], "up"]
+
+R = Area()
+R.instructions = ["down", [0, 30], [10, 25], [5, 20], [20, 0], "up"]
+
+O = Area()
+O.instructions = ["down", [0, 20], [10, 20], [10, 10], [5, 10], "up"]
+
+T = Area()
+T.instructions = ["up", [0, 20], "down", [20, 20], "up", [17.5, 22], "down", [15, 0], "up"]
+
+A = Area()
+A.instructions = ["down", [0, 20], [10, 20], [10, 0], "up", [15, 10], "down", [5, 10], "up"]
+
+B = Area()
+B.instructions = ["down", [0, 20], [10, 15], [5, 10], [10, 5], [5, 0], "up"]
 
 abeceda = {"A": A, "B": B, "C": C, "D": D, "E": E, "F": F, "G": G, "H": H, "I": I, "J": J, "K": K, "L": L, "M": M, "N": N, "O": O, "P": P, "Q": Q, "R": R, "S": S, "T": T, "U": U, "V": V, "W": W, "X": X, "Y": Y, "Z": Z}
 #Area nistruction set
